@@ -10,17 +10,9 @@ window.addEventListener("load", function() {
       let fuelLevelInput = document.querySelector("input[name=fuelLevel]");
       let cargoLevelInput = document.querySelector("input[name=cargoMass]");
       let list = document.getElementById("faultyItems");
-        if (
-            pilotInput.value === "" ||
-            copilotInput.value === "" ||
-            fuelLevelInput.value === "" ||
-            cargoLevelInput.value === "") 
-        {
-            alert("All fields are required!");
-              
-        } else {
+        
         formSubmission(document, list, pilotInput.value, copilotInput.value, fuelLevelInput.value, cargoLevelInput.value);
-        }
+
     });
 
     let listedPlanets;
